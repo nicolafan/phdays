@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nicola Fanelli — PhDays 2026</title>
+<meta name="description" content="Analysis and valorization of digitized artistic heritage using Artificial Intelligence techniques — PhDays 2026, University of Bari Aldo Moro.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="progress"></div>
+<nav id="dots" aria-label="Section navigation"></nav>
+
+<main>
+
+  <!-- ============ 0 · HERO ============ -->
+  <header class="topbar">
+    <img src="assets/funders-header.svg"
+         alt="Funded by the European Union – NextGenerationEU · Ministero dell'Università e della Ricerca · Italiadomani (PNRR) · Università degli Studi di Bari Aldo Moro">
+  </header>
+
+  <section class="section tall" id="hero" data-nav="Title">
+    <div class="hero-wrap">
+      <p class="kicker reveal">PhD Research Talk · PhDays 2026</p>
+      <h1 class="hero-scholarship reveal d1">
+        Analysis and valorization of<br>
+        digitized <span class="em">artistic heritage</span><br>
+        using Artificial Intelligence <span style="font-size:.62em;font-style:italic;color:var(--mut);">techniques</span>
+      </h1>
+      <div class="hero-rule reveal d2"></div>
+      <div class="hero-meta reveal d2">
+        <span class="name">Nicola Fanelli</span>
+        <span class="muted">Third-year PhD student · nearing completion</span>
+      </div>
+      <div class="hero-meta reveal d3" style="margin-top:8px;">
+        <span class="muted">University of Bari Aldo Moro · CILab — Computational Intelligence Lab</span>
+      </div>
+      <div class="hero-meta reveal d3" style="margin-top:8px;">
+        <span class="muted">Supervisor <b style="color:var(--ink);font-weight:600;">Prof. Giovanna Castellano</b> · Co-supervisor <b style="color:var(--ink);font-weight:600;">Dr. Gennaro Vessio</b></span>
+      </div>
+      <div class="hero-badges reveal d3">
+        <span class="badge tech">Vision–Language Models</span>
+        <span class="badge tech">Cultural Heritage</span>
+        <span class="badge accent">Understand → Create → Interpret</span>
+      </div>
+      <p class="hero-funding reveal d4">Funded by the Italian NRRP fellowship — D.M. n. 118/23, Mission 4 · NextGenerationEU</p>
+    </div>
+    <div class="scroll-cue reveal d4">Scroll to begin<span class="chev"></span></div>
+  </section>
+
+  <!-- ============ 1 · BACKGROUND ============ -->
+  <section class="section" id="background" data-nav="Background">
+    <div class="intro">
+      <div>
+        <p class="kicker reveal">The through-line</p>
+        <h2 class="reveal d1">Teaching machines to <span class="serif" style="font-style:italic">see</span> — and to understand art.</h2>
+      </div>
+      <p class="lede reveal d2">My PhD centers on <b>vision–language models</b> (VLMs / multimodal LLMs) applied to digitized artworks — bridging what a model <i>perceives</i> and what a painting <i>means</i>.</p>
+    </div>
+
+    <div class="grid g4">
+      <div class="card hover reveal d1">
+        <svg class="icon ico" viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+        <h3>Perceive</h3>
+        <p>Models that look at an image and recognize what is depicted — objects, figures, composition.</p>
+      </div>
+      <div class="card hover reveal d2">
+        <svg class="icon ico" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <h3>Describe</h3>
+        <p>Turning visual perception into language — captions, answers, and reasoned explanations.</p>
+      </div>
+      <div class="card hover reveal d3">
+        <svg class="icon ico" viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+        <h3>Contextualize</h3>
+        <p>Grounding descriptions in art-historical knowledge — style, artist, iconography, culture.</p>
+      </div>
+      <div class="card hover reveal d4">
+        <svg class="icon ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <h3>Interpret</h3>
+        <p>Opening the black box: <i>why</i> does the model say what it says? What does its latent space encode?</p>
+      </div>
+    </div>
+
+    <p class="lede reveal" style="max-width:60ch;margin-top:40px;font-size:1.15rem;">
+      Three contributions trace this arc — a system that <b class="serif">understands</b> artworks,
+      one that <b class="serif">creates</b> within them, and one that <b class="serif">interprets</b>
+      the models themselves.
+    </p>
+  </section>
+
+  <!-- ============ 2 · ROADMAP ============ -->
+  <section class="section" id="roadmap" data-nav="Roadmap">
+    <p class="kicker reveal">Three works, one arc</p>
+    <div class="grid g3">
+      <div class="card hover reveal d1">
+        <span class="badge accent" style="margin-bottom:12px;">01 · Understand</span>
+        <h3 class="serif">ArtSeek</h3>
+        <p style="margin-top:8px;">Deep artwork understanding via multimodal retrieval &amp; agentic reasoning.</p>
+        <p class="mono" style="font-size:.72rem;color:var(--tech);margin-top:12px;">arXiv 2507.21917 · 2025</p>
+      </div>
+      <div class="card hover reveal d2">
+        <span class="badge accent" style="margin-bottom:12px;">02 · Create</span>
+        <h3 class="serif">I Dream My Painting</h3>
+        <p style="margin-top:8px;">MLLMs + diffusion for text-guided multi-mask inpainting.</p>
+        <p class="mono" style="font-size:.72rem;color:var(--tech);margin-top:12px;">WACV 2025 · arXiv 2411.19050</p>
+      </div>
+      <div class="card hover reveal d3">
+        <span class="badge accent" style="margin-bottom:12px;">03 · Interpret</span>
+        <h3 class="serif">Token Activation Maps</h3>
+        <p style="margin-top:8px;">Understanding how MLLMs ground their descriptions of artworks.</p>
+        <p class="mono" style="font-size:.72rem;color:var(--tech);margin-top:12px;">ICPR 2026 · PRESTIGE workshop</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 · ARTSEEK ============ -->
+  <section class="section wide" id="artseek" data-nav="ArtSeek">
+    <div class="intro">
+      <div>
+        <p class="kicker reveal">01 · Understand</p>
+        <h2 class="reveal d1">ArtSeek</h2>
+        <p class="reveal d1 muted serif" style="font-size:1.2rem;font-style:italic;margin-top:-.2em;">Deep artwork understanding via multimodal in-context reasoning &amp; late-interaction retrieval</p>
+      </div>
+      <p class="lede reveal d2">Understand <b>any</b> artwork from the image alone — no link to a database required — by retrieving knowledge, classifying attributes, and reasoning like an agent.</p>
+    </div>
+
+    <div class="grid g3" style="margin-bottom:34px;">
+      <div class="card reveal d1">
+        <span class="badge tech" style="margin-bottom:10px;">Component 1</span>
+        <h3 class="serif">Multimodal retrieval</h3>
+        <p>Late-interaction search (built on ColQwen2) over <b>WikiFragments</b> — 5.6M image–text fragments from Wikipedia's visual arts.</p>
+      </div>
+      <div class="card reveal d2">
+        <span class="badge tech" style="margin-bottom:10px;">Component 2</span>
+        <h3 class="serif">LICN classification</h3>
+        <p>A Late-Interaction Classification Network predicts artist, style, genre, media &amp; tags in one contrastive pass.</p>
+      </div>
+      <div class="card reveal d3">
+        <span class="badge tech" style="margin-bottom:10px;">Component 3</span>
+        <h3 class="serif">Agentic reasoning</h3>
+        <p>Qwen2.5-VL-32B reasons with <code class="mono">&lt;think&gt;</code> steps and calls the retriever as a tool to ground its answer.</p>
+      </div>
+    </div>
+
+    <figure class="plate pad reveal" style="margin-bottom:44px;">
+      <img src="assets/figures/artseek_pipeline.png" alt="ArtSeek pipeline overview" style="max-height:420px;">
+      <figcaption>The ArtSeek pipeline — retrieval, classification and MLLM reasoning operate from the image alone.</figcaption>
+    </figure>
+
+    <div class="reveal" style="margin-bottom:44px;">
+      <div class="wikifrag">
+        <div class="wf-main">
+          <span class="badge tech">The knowledge base</span>
+          <h3 class="serif">WikiFragments</h3>
+          <p>A Wikipedia-scale, <b>multimodal</b> knowledge base built for grounding. Each
+            <b>fragment</b> pairs a paragraph with the image that sits above it on the page — a single
+            image–text document the late-interaction retriever can search. This is what lets ArtSeek
+            explain even obscure works it was never explicitly trained on.</p>
+          <div class="wf-flow" aria-hidden="true">
+            <div class="wf-node"><div class="wf-img"></div><small>image on page</small></div>
+            <span class="wf-plus">+</span>
+            <div class="wf-node"><div class="wf-lines"></div><small>paragraph below</small></div>
+            <span class="wf-arrow">→</span>
+            <div class="wf-node frag"><div class="wf-frag-mini"><span class="m-img"></span><span class="m-lines"></span></div><small>one fragment</small></div>
+          </div>
+        </div>
+        <div class="wf-side">
+          <div class="wf-stat"><span class="n">5,651,060</span><span class="l">image–text fragments in total</span></div>
+          <div class="wf-stat"><span class="n">417,425</span><span class="l">fragments paired with an image</span></div>
+          <div class="wf-stat"><span class="n">5.23<small style="font-size:1rem">M</small></span><span class="l">text-only fragments</span></div>
+          <div class="wf-stat"><span class="n">Visual Arts</span><span class="l">Wikipedia category crawled</span></div>
+        </div>
+      </div>
+
+      <!-- a genuine record pulled from the Hugging Face dataset -->
+      <div class="wf-specimen">
+        <div class="sp-hd"><span class="d"></span> a real fragment · <b>cilabuniba/wikifragments</b><span class="rid">record #1,859,791</span></div>
+        <div class="sp-body">
+          <figure>
+            <img src="assets/wikifragments/bacchanal_putti.jpg" alt="Bacchanal of Putti — oil on canvas at the Met">
+            <figcaption><b>image</b> · “Oil on canvas copy at the Met” — Manner of Jacob de Wit · CC0</figcaption>
+          </figure>
+          <div>
+            <div class="sp-key">paired paragraph text</div>
+            <p class="sp-text"><span class="q">The relief shows a group of “putti” pulling a goat by the horns. One of them is lashing it with a stick, while the “putto” next to him is reaching his left hand to the hovering stick.</span> … According to Bellori, Cardinal Francesco Barberini donated the relief to Philip IV of Spain; the relief is currently housed at the Galleria Doria Pamphilj in Rome.</p>
+            <div class="sp-meta">
+              <span><b>source</b> · <a href="https://en.wikipedia.org/wiki?curid=65363352" target="_blank" rel="noopener">Wikipedia — “Bacchanal of Putti”</a></span>
+              <span><b>paragraph</b> · #2</span>
+              <span><b>fields</b> · id · title · text · url · images[ ]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- open on Hugging Face, with download counts -->
+      <div class="wf-links">
+        <a class="hf-link" href="https://huggingface.co/datasets/cilabuniba/wikifragments" target="_blank" rel="noopener">
+          <span class="hf-ico">🤗</span>
+          <span class="hf-name">cilabuniba/<span>wikifragments</span></span>
+          <span class="hf-dl"><b>4,624</b><small>downloads · all-time</small></span>
+        </a>
+        <a class="hf-link" href="https://huggingface.co/datasets/cilabuniba/wikifragments-visual-arts-embeds" target="_blank" rel="noopener">
+          <span class="hf-ico">🤗</span>
+          <span class="hf-name">cilabuniba/<span>wikifragments-visual-arts-embeds</span></span>
+          <span class="hf-dl"><b>5,321</b><small>downloads · all-time</small></span>
+        </a>
+      </div>
+    </div>
+
+    <p class="kicker reveal">Live example · reconstructed from the paper</p>
+    <h3 class="serif reveal d1" style="font-size:1.6rem;margin-bottom:18px;">A conversation with ArtSeek</h3>
+
+    <!-- chat demo hydrated by main.js -->
+    <div class="chat-shell reveal d1" id="artseek-chat">
+      <div class="chat-top">
+        <div class="dotrow"><i></i><i></i><i></i></div>
+        <span class="ttl"><b>ArtSeek</b> · agentic artwork assistant</span>
+      </div>
+      <div class="chat-body" id="chat-body"></div>
+      <div class="chat-ctrl">
+        <button class="btn" id="chat-next">▶ Advance</button>
+        <button class="btn ghost" id="chat-reset">↺ Restart</button>
+        <span class="prog" id="chat-prog"></span>
+      </div>
+    </div>
+    <p class="editnote">This transcript is a real example from the paper (Fig. 6). It lives in <code>js/content.js</code> — swap it for your recorded demo anytime.</p>
+
+    <div class="metrics reveal" style="margin-top:44px;">
+      <div class="metric"><div class="num">+8.4<small>%</small></div><div class="lab">Style F1 over GraphCLIP</div><div class="sub">66.65 vs 58.22</div></div>
+      <div class="metric"><div class="num">73.3</div><div class="lab">Genre F1 (state of the art)</div><div class="sub">+8.2 over prior best</div></div>
+      <div class="metric"><div class="num">5.6<small>M</small></div><div class="lab">WikiFragments retrieved corpus</div><div class="sub">417K with images</div></div>
+      <div class="metric"><div class="num">39.7</div><div class="lab">ArtPedia caption BLEU@1</div><div class="sub">vs 32.6 prior work</div></div>
+    </div>
+    <p class="reveal" style="margin-top:20px;"><a href="https://github.com/cilabuniba/artseek" target="_blank" rel="noopener">github.com/cilabuniba/artseek</a> · <a href="https://arxiv.org/abs/2507.21917" target="_blank" rel="noopener">arXiv 2507.21917</a></p>
+  </section>
+
+  <!-- ============ 4 · IDMP ============ -->
+  <section class="section wide" id="idmp" data-nav="Inpainting">
+    <div class="intro">
+      <div>
+        <p class="kicker reveal">02 · Create</p>
+        <h2 class="reveal d1">I Dream My Painting</h2>
+        <p class="reveal d1 muted serif" style="font-size:1.2rem;font-style:italic;margin-top:-.2em;">Connecting MLLMs &amp; diffusion models via prompt generation for text-guided multi-mask inpainting</p>
+      </div>
+      <p class="lede reveal d2">Restore or reimagine a painting by filling <b>many regions at once</b> — each with its own text prompt, generated automatically and bound precisely to its area.</p>
+    </div>
+
+    <!-- stepper hydrated by main.js -->
+    <div class="idmp reveal d1" id="idmp-demo">
+      <div class="idmp-stage">
+        <div class="idmp-canvas" id="idmp-canvas"></div>
+        <div class="cap">
+          <div class="t" id="idmp-title"></div>
+          <div class="d" id="idmp-desc"></div>
+        </div>
+        <div class="idmp-prompts" id="idmp-prompts"></div>
+      </div>
+      <div>
+        <div class="idmp-steps" id="idmp-steps"></div>
+        <div class="idmp-actions">
+          <button class="btn" id="idmp-play">▶ Auto-play</button>
+          <button class="btn ghost" id="idmp-orig">Show original animation</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid g3 reveal" style="margin-top:40px;">
+      <div class="card"><h3 class="serif">Prompt generation</h3><p>A QLoRA-tuned LLaVA writes a caption for each region — outperforming baselines on accuracy, BLEU, ROUGE-L &amp; CLIP similarity.</p></div>
+      <div class="card"><h3 class="serif">Rectified Cross-Attention</h3><p>A lightweight change to Stable Diffusion's attention forces each prompt onto its designated mask — better FID &amp; LPIPS.</p></div>
+      <div class="card"><h3 class="serif">Where it works</h3><p>Validated on WikiArt paintings and Densely Captioned Images, for 1- to 5-mask scenarios.</p></div>
+    </div>
+    <p class="reveal" style="margin-top:20px;"><span class="badge accent">WACV 2025</span> &nbsp; <a href="https://cilabuniba.github.io/i-dream-my-painting" target="_blank" rel="noopener">project page</a> · <a href="https://github.com/cilabuniba/i-dream-my-painting" target="_blank" rel="noopener">github</a> · <a href="https://arxiv.org/abs/2411.19050" target="_blank" rel="noopener">arXiv 2411.19050</a></p>
+  </section>
+
+  <!-- ============ 5 · ZURICH INTERLUDE ============ -->
+  <section id="zurich" data-nav="Zürich">
+    <div class="glow"></div>
+    <div class="inner">
+      <p class="kicker reveal">A research visit · pivot to interpretability</p>
+      <h2 class="reveal d1">Six months at the University of Zürich</h2>
+      <p class="big reveal d2">From <span class="em">September 1, 2025</span> to <span class="em">March 1, 2026</span>, I worked under <span class="em">Dr.&nbsp;Eva&nbsp;Cetinic</span>, focusing on the <span class="em">interpretability of the latent space</span> of vision–language models.</p>
+      <div class="zdivider reveal d2"></div>
+      <p class="big reveal d3" style="font-size:clamp(1.05rem,2vw,1.35rem);color:#bdb39d;">The question shifts: from <i>building</i> models that describe art, to <i>understanding</i> what happens inside them.</p>
+      <div class="zmeta reveal d3">
+        <span><b>Host</b> · Dr. Eva Cetinic</span>
+        <span><b>Where</b> · University of Zürich</span>
+        <span><b>Focus</b> · Latent-space interpretability of VLMs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6 · TAMART ============ -->
+  <section class="section wide" id="tamart" data-nav="Interpret">
+    <div class="intro">
+      <div>
+        <p class="kicker reveal">03 · Interpret</p>
+        <h2 class="reveal d1">Token Activation Maps</h2>
+        <p class="reveal d1 muted serif" style="font-size:1.2rem;font-style:italic;margin-top:-.2em;">Understanding how MLLMs describe artworks</p>
+      </div>
+      <p class="lede reveal d2">When a model writes a caption, <b>does it look where it says it looks?</b> Token Activation Maps trace each generated word back to the image region that produced it.</p>
+    </div>
+
+    <!-- TAM explorer hydrated by main.js -->
+    <div class="tam reveal d1" id="tam-explorer">
+      <div class="tam-view">
+        <div class="tam-picktitle">
+          <div>
+            <div class="np-title" id="np-title">—</div>
+            <div class="np-artist" id="np-artist">—</div>
+          </div>
+        </div>
+        <div class="tam-imgwrap">
+          <img id="painting" alt="Selected painting">
+          <canvas id="overlay"></canvas>
+        </div>
+        <div class="tam-controls">
+          <label class="toggle"><input type="checkbox" id="t-tam" checked> TAM heatmap</label>
+          <label class="toggle"><input type="checkbox" id="t-otsu"> Otsu mask</label>
+          <label class="toggle disabled" id="ctl-sam"><input type="checkbox" id="t-sam" disabled> SAM-3</label>
+          <span class="alpha-ctl">opacity <input type="range" id="alpha" min="10" max="100" value="70"></span>
+        </div>
+        <div class="span-hint" id="span-hint"></div>
+        <div class="sam-note" id="sam-note"></div>
+        <div class="meta-card" id="meta-card"></div>
+      </div>
+
+      <div class="tam-side">
+        <h3 class="serif">Pick a painting</h3>
+        <div class="tam-picker" id="tam-picker"></div>
+        <div class="tam-caption-label">Model-generated caption — click any highlighted token</div>
+        <div class="caption" id="caption"></div>
+        <div class="legend" id="legend"></div>
+      </div>
+    </div>
+
+    <p class="kicker reveal" style="margin-top:52px;">What we found</p>
+    <div class="grid g3">
+      <div class="card reveal d1 finding">
+        <div class="big-stat">precise <span style="color:var(--mut);font-size:1rem;">vs</span> diffuse</div>
+        <p style="margin-top:10px;">Concrete objects (<b style="color:var(--cvo)">CVO</b>) localize sharply; <b style="color:var(--style)">style</b> and <b style="color:var(--affect)">affect</b> tokens activate diffusely across the whole canvas.</p>
+      </div>
+      <div class="card reveal d2 finding">
+        <div class="big-stat">82<span style="font-size:1.3rem;">%</span> <span class="vs">vs</span> 28<span style="font-size:1.3rem;">%</span></div>
+        <p style="margin-top:10px;">Models identify the <b>artist</b> far more reliably than the <b>title</b> — visual style is more legible than a specific work's identity.</p>
+      </div>
+      <div class="card reveal d3 finding">
+        <div class="big-stat serif" style="font-style:italic;">priors</div>
+        <p style="margin-top:10px;">On wrong guesses, models lean on textual priors — e.g. captioning Manet's <i>Luncheon on the Grass</i> as “<i>Olympia</i>,” another Manet work.</p>
+      </div>
+    </div>
+    <p class="reveal" style="margin-top:22px;"><span class="badge accent">ICPR 2026 · PRESTIGE</span> &nbsp; with Eva Cetinic · <a href="https://nicolafan.github.io/tamart/" target="_blank" rel="noopener">interactive demo</a> · <a href="https://arxiv.org/abs/2606.27947" target="_blank" rel="noopener">arXiv 2606.27947</a></p>
+  </section>
+
+  <!-- ============ 7 · PUBLICATIONS & SERVICE ============ -->
+  <section class="section wide" id="publications" data-nav="Publications">
+    <p class="kicker reveal">Publications &amp; academic service</p>
+    <h2 class="reveal d1">Publications</h2>
+    <p class="lede reveal d2" style="max-width:60ch;margin-bottom:36px;">The three works from this talk — spanning understanding, generation and interpretation of art with vision–language models.</p>
+
+    <div class="pub-feat">
+      <div class="pubcard reveal d1">
+        <div class="idx">01 · Understand</div>
+        <h3 class="serif">ArtSeek: Deep artwork understanding via multimodal in-context reasoning &amp; late-interaction retrieval</h3>
+        <div class="pub-auth"><span class="me">Nicola Fanelli</span>, Gennaro Vessio, Giovanna Castellano</div>
+        <div class="pub-venue"><b>Under submission</b> at a premier computer-vision conference · 2025</div>
+        <div class="pub-tags">
+          <span class="chip">arXiv 2507.21917</span>
+          <a class="pub-link" href="https://arxiv.org/abs/2507.21917" target="_blank" rel="noopener">arxiv.org/abs/2507.21917 →</a>
+        </div>
+      </div>
+
+      <div class="pubcard reveal d2">
+        <div class="idx">02 · Create</div>
+        <h3 class="serif">I Dream My Painting: Connecting MLLMs and Diffusion Models via Prompt Generation for Text-Guided Multi-Mask Inpainting</h3>
+        <div class="pub-auth"><span class="me">Nicola Fanelli</span>, Gennaro Vessio, Giovanna Castellano</div>
+        <div class="pub-venue"><b>IEEE/CVF WACV 2025</b> · Winter Conf. on Applications of Computer Vision · Tucson, AZ</div>
+        <div class="pub-tags">
+          <span class="award-tag">🏆 Best Paper Honorable Mention — IEEE CIS Italy Chapter, IJCNN 2025</span>
+          <a class="pub-link" href="https://arxiv.org/abs/2411.19050" target="_blank" rel="noopener">arxiv.org/abs/2411.19050 →</a>
+        </div>
+      </div>
+
+      <div class="pubcard reveal d3">
+        <div class="idx">03 · Interpret</div>
+        <h3 class="serif">Understanding How MLLMs Describe Artworks Using Token Activation Maps</h3>
+        <div class="pub-auth"><span class="me">Nicola Fanelli</span>, Pasquale De Marinis, Raffaele Scaringi, <b>Eva Cetinic</b>, Gennaro Vessio, Giovanna Castellano</div>
+        <div class="pub-venue"><b>ICPR 2026</b> · PRESTIGE Workshop</div>
+        <div class="pub-tags">
+          <span class="chip">arXiv 2606.27947</span>
+          <a class="pub-link" href="https://arxiv.org/abs/2606.27947" target="_blank" rel="noopener">arxiv.org/abs/2606.27947 →</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="kicker reveal" style="margin-top:40px;">The full publication record</p>
+    <div class="pub-more reveal">
+      <div class="row">
+        <div><div class="t">Art2Mus: Artwork-to-Music Generation via Visual Conditioning and Large-Scale Cross-Modal Alignment</div>
+          <div class="a">I. Rinaldi, M. Mendula, <b>N. Fanelli</b>, F. Levé, M. Testi, G. Castellano, G. Vessio</div></div>
+        <div class="v">arXiv 2602.17599 · 2026</div>
+      </div>
+      <div class="row">
+        <div><div class="t">WikiFragments — a Wikipedia-scale multimodal knowledge base</div>
+          <div class="a"><b>N. Fanelli</b>, G. Vessio, G. Castellano</div></div>
+        <div class="v">Dataset · 2026</div>
+      </div>
+      <div class="row">
+        <div><div class="t">Label Anything: Multi-Class Few-Shot Semantic Segmentation with Visual Prompts</div>
+          <div class="a">P. De Marinis, <b>N. Fanelli</b>, R. Scaringi, E. Colonna, G. Fiameni, G. Vessio, G. Castellano</div></div>
+        <div class="v">ECAI 2025</div>
+      </div>
+      <div class="row">
+        <div><div class="t">Multimodal Artwork Topic Modeling via Fine-Tuned CLIP and Knowledge-Driven Prompts</div>
+          <div class="a">R. Scaringi, G. Stea, <b>N. Fanelli</b>, G. Vessio, G. Castellano</div></div>
+        <div class="v">IEEE MLSP 2025</div>
+      </div>
+      <div class="row">
+        <div><div class="t">Unveiling Visual Features in Artwork Classification: Towards Explainable Vision Transformers in the Arts</div>
+          <div class="a">R. Scaringi, <b>N. Fanelli</b>, G. Vessio, G. Castellano</div></div>
+        <div class="v">ICIAP 2025</div>
+      </div>
+      <div class="row">
+        <div><div class="t">Generative AI Across Modalities: Insights From Our Research on Domain-Aware Content Generation</div>
+          <div class="a">G. Castellano, E. Colonna, <b>N. Fanelli</b>, L. Laraspata, I. Rinaldi, A. G. Valerio, et al.</div></div>
+        <div class="v">CEUR Workshop · 2025</div>
+      </div>
+      <div class="row">
+        <div><div class="t">Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation</div>
+          <div class="a">I. Rinaldi, <b>N. Fanelli</b>, G. Castellano, G. Vessio</div></div>
+        <div class="v">ECCV 2024 · Workshops</div>
+      </div>
+      <div class="row">
+        <div><div class="t">Converso: Improving LLM Chatbot Interfaces and Task Execution via Conversational Forms</div>
+          <div class="a">G. Demarco, <b>N. Fanelli</b>, G. Vessio, G. Castellano</div></div>
+        <div class="v">LUHME Workshop · 2024</div>
+      </div>
+      <div class="row">
+        <div><div class="t">Exploring the Synergy Between Vision-Language Pretraining and ChatGPT for Artwork Captioning</div>
+          <div class="a">G. Castellano, <b>N. Fanelli</b>, R. Scaringi, G. Vessio</div></div>
+        <div class="v">ICIAP 2023 · Workshops</div>
+      </div>
+      <div class="row">
+        <div><div class="t">Exploring New Frontiers at the Intersection of AI and Art</div>
+          <div class="a">G. Castellano, <b>N. Fanelli</b>, R. Scaringi, G. Vessio</div></div>
+        <div class="v">LNCS · 2023</div>
+      </div>
+    </div>
+
+    <p class="kicker reveal" style="margin-top:52px;">Other activities · academic service</p>
+    <div class="service">
+      <div class="svc reveal d1">
+        <div class="role">Invited reviewer</div>
+        <div class="venue serif">CVPR 2026</div>
+        <div class="sub">IEEE/CVF Conference on Computer Vision and Pattern Recognition — the premier venue in computer vision.</div>
+      </div>
+      <div class="svc reveal d2">
+        <div class="role">Invited reviewer</div>
+        <div class="venue serif">NeurIPS 2026</div>
+        <div class="sub">Conference on Neural Information Processing Systems — a top venue in machine learning.</div>
+        <span class="llm">◍ selected for the LLM-in-reviewing experiment</span>
+      </div>
+    </div>
+
+    <p class="kicker reveal" style="margin-top:44px;">How prestigious are these venues?</p>
+    <div class="rankwrap reveal">
+      <p class="rank-note">In computer science, the flagship <b>conferences</b> — not journals — are the top venues. By Google Scholar's <b>h5-index</b>, CVPR and NeurIPS rank among the highest-impact publications in <b>all of science</b>, ahead of most journals:</p>
+      <div class="rankhead"><span>Rank</span><span>Top publications — all fields (Google Scholar Metrics, h5-index)</span><span>h5</span></div>
+      <div class="rankboard">
+        <div class="rk"><span class="n">1</span><span class="nm">Nature</span><span class="h5">490</span></div>
+        <div class="rk hot"><span class="n">2</span><span class="nm"><b>CVPR</b> — Computer Vision and Pattern Recognition <span class="tag">#1 in Eng. &amp; CS</span></span><span class="h5">450</span></div>
+        <div class="rk"><span class="n">3</span><span class="nm">The New England Journal of Medicine</span><span class="h5">441</span></div>
+        <div class="rk"><span class="n">4</span><span class="nm">Science</span><span class="h5">415</span></div>
+        <div class="rk"><span class="n">5</span><span class="nm">Nature Communications</span><span class="h5">399</span></div>
+        <div class="rk"><span class="n">6</span><span class="nm">The Lancet</span><span class="h5">375</span></div>
+        <div class="rk hot"><span class="n">7</span><span class="nm"><b>NeurIPS</b> — Neural Information Processing Systems <span class="tag">#2 in Eng. &amp; CS</span></span><span class="h5">371</span></div>
+        <div class="rk"><span class="n">8</span><span class="nm">International Conference on Learning Representations (ICLR)</span><span class="h5">362</span></div>
+      </div>
+      <div class="rank-cs">
+        <span class="badge accent">CVPR · #2 across all of science · #1 in Engineering &amp; Computer Science</span>
+        <span class="badge accent">NeurIPS · #7 across all of science · #2 in Engineering &amp; Computer Science</span>
+      </div>
+    </div>
+
+    <p class="kicker reveal" style="margin-top:44px;">Organizing, reviewing &amp; talks</p>
+    <div class="svc-detail">
+      <div class="card reveal d1">
+        <h3 class="serif"><svg class="icon ic" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>Workshop organizing</h3>
+        <ul class="svc-list">
+          <li><b>Program Chair</b> — PRESTIGE workshop <span class="where">@ ICPR 2026</span></li>
+          <li><b>Co-organizer</b> — FAPER (Fine Art Pattern Recognition) <span class="where">@ ICIAP 2025</span></li>
+        </ul>
+      </div>
+
+      <div class="card reveal d2">
+        <h3 class="serif"><svg class="icon ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>Invited talks</h3>
+        <ul class="svc-list">
+          <li>Tutorial <b>“AI for Visual Arts”</b></li>
+          <li>Presented <b>ArtSeek</b> at <i>“From Hype to Reality: AI in the Study of Art &amp; Culture”</i> <span class="where">University of Zürich · Nov 2025</span></li>
+        </ul>
+      </div>
+
+      <div class="card reveal d1">
+        <h3 class="serif"><svg class="icon ic" viewBox="0 0 24 24"><path d="M12 20h9M3 20h4M4 20V8a2 2 0 0 1 2-2h1M20 20V8a2 2 0 0 0-2-2h-1M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M9 6h6M9 6v14M15 6v14"/></svg>Reviewer · conferences</h3>
+        <div class="svc-chips">
+          <span class="chip hot">CVPR</span><span class="chip hot">NeurIPS</span>
+          <span class="chip">ECAI</span><span class="chip">IJCNN</span><span class="chip">ICAART</span><span class="chip">ICPR</span>
+        </div>
+      </div>
+
+      <div class="card reveal d2">
+        <h3 class="serif"><svg class="icon ic" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Reviewer · journals</h3>
+        <div class="svc-chips">
+          <span class="chip">Journal of Intelligent Systems</span>
+          <span class="chip">Journal of Cultural Heritage</span>
+          <span class="chip">Information Systems Frontiers</span>
+          <span class="chip">Information Processing &amp; Management</span>
+          <span class="chip">IEEE Access</span>
+          <span class="chip">Knowledge-Based Systems</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8 · CLOSING ============ -->
+  <section class="section tall" id="closing" data-nav="Close">
+    <p class="kicker reveal" style="justify-content:center;">The arc</p>
+    <div class="arc reveal d1">
+      <span class="word">Understand</span><span class="arr">→</span>
+      <span class="word">Create</span><span class="arr">→</span>
+      <span class="word">Interpret</span>
+    </div>
+    <p class="lede reveal d2" style="margin:0 auto;max-width:52ch;text-align:center;font-size:1.25rem;">
+      Toward vision–language models for cultural heritage that are not only capable, but <b>grounded, generative, and understandable</b>.
+    </p>
+
+    <div class="thanks reveal d3">Thank you.</div>
+    <p class="contact reveal d3">Nicola Fanelli · University of Bari Aldo Moro · nicola.fanelli16@gmail.com</p>
+  </section>
+
+</main>
+
+<script src="js/tam-data.js"></script>
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
